@@ -1,0 +1,14 @@
+<section class="categorias-container">
+  <h2>Categorías</h2>
+
+  <div class="categoria-list">
+    <div
+      class="categoria-card"
+      *ngFor="let cat of categorias"
+      (click)="verProductos(cat)"
+    >
+      {{ cat | titlecase }}
+    </div>
+  </div>
+</section>
+

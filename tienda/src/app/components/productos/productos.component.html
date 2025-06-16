@@ -1,0 +1,7 @@
+<h2>Productos en "{{ categoria }}"</h2>
+    <div class="productos">
+      <div *ngFor="let prod of productos" (click)="verDetalle(prod.id)" class="producto">
+        <img [src]="prod.image" alt="" />
+        <p>{{ prod.title }}</p>
+      </div>
+    </div>
